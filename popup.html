@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI LinkedIn Commenter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup-body">
+  <div class="app-header">
+    <div class="logo-container">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="white" opacity="0.2"/>
+        <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 6L13.2 9.6L17 10.8L13.2 12L12 15.6L10.8 12L7 10.8L10.8 9.6L12 6Z" fill="white"/>
+      </svg>
+      <h1>AI LinkedIn Commenter</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <p class="desc">All generation settings (tone, length, emojis) are now available directly inside the LinkedIn comment box!</p>
+    
+    <div class="form-group">
+      <label for="aiProvider">AI Provider</label>
+      <select id="aiProvider" class="select-input">
+        <option value="gemini">Google Gemini</option>
+        <option value="chatgpt">OpenAI ChatGPT</option>
+        <option value="claude">Anthropic Claude</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="apiKey">Add API Key</label>
+      <input type="password" id="apiKey" placeholder="Enter your API key">
+      <small>Get it from your favourite AI tool chatgpt, claude, gemini etc.</small>
+    </div>
+
+    <button id="saveBtn" class="btn primary">Save API Key</button>
+    <div id="status" class="status-msg"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
