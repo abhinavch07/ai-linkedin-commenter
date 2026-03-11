@@ -7,7 +7,7 @@ A powerful, open-source browser extension that generates contextual, AI-powered 
 
 **Bring Your Own Key (BYOK)**: This extension supports multiple AI providers. You can use your own API key from **Google Gemini**, **OpenAI ChatGPT**, or **Anthropic Claude**.
 
-![Demo](linkedin_commenter_demo.gif)
+![Demo](linkedin_commenter_demo.gif) 
 
 ## ✨ Features
 
