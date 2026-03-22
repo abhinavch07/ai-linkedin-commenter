@@ -24,21 +24,20 @@ export function Pricing() {
   const period = isAnnual ? '/year' : '/month';
 
   const freeFeatures = [
-    '7 days of full Pro access',
-    'Inline LinkedIn experience',
-    '4 Smart Tones & Length Options',
-    'Language Detection',
-    'Hot Post Badge & Quality Score',
-    'Engagement Streak Tracker'
+    'Full access to all Pro features',
+    'Powered by GPT-4o mini',
+    'Unlimited AI comments',
+    'AI Post Generator',
+    'Comment History & Golden Hour',
+    'Custom Persona'
   ];
 
   const proFeatures = [
-    'Everything in Free, plus:',
-    'Unlimited AI comments',
-    'AI Post Generator',
-    'Comment History (last 20)',
-    'Golden Hour Feed Scanner',
-    'Custom Persona',
+    'Everything in Trial, plus:',
+    'Permanent access (no hard block)',
+    'Advanced Engagement Analytics',
+    'Scheduled Commenting Windows',
+    'Multi-language Personas',
     'Priority Customer Support'
   ];
 
@@ -96,7 +95,7 @@ export function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Free Plan */}
+          {/* Trial Plan */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -104,9 +103,9 @@ export function Pricing() {
             transition={{ duration: 0.5 }}
             className="rounded-3xl bg-white p-8 shadow-xl ring-1 ring-slate-200 sm:p-10 flex flex-col"
           >
-            <h3 className="text-2xl font-semibold leading-8 text-slate-900">Free</h3>
+            <h3 className="text-2xl font-semibold leading-8 text-slate-900">14-Day Trial</h3>
             <p className="mt-4 text-sm leading-6 text-slate-600">
-              Perfect for trying out the extension and casual networking.
+              Perfect for experiencing the full power of the extension.
             </p>
             <div className="mt-6 flex items-baseline gap-x-1">
               <span className="text-5xl font-bold tracking-tight text-slate-900">Free</span>
@@ -115,7 +114,7 @@ export function Pricing() {
               href="#"
               className="mt-8 block rounded-full bg-white px-3 py-3 text-center text-sm font-semibold leading-6 text-indigo-600 shadow-sm ring-1 ring-inset ring-indigo-200 hover:bg-slate-50 transition-all"
             >
-              Add to Chrome
+              Start Free Trial
             </a>
             <ul className="mt-8 space-y-3 text-sm leading-6 text-slate-600 flex-grow">
               {freeFeatures.map((feature) => (
@@ -124,22 +123,6 @@ export function Pricing() {
                   {feature}
                 </li>
               ))}
-              <li className="flex gap-x-3 text-slate-400">
-                <X className="h-6 w-5 flex-none" aria-hidden="true" />
-                AI Post Generator
-              </li>
-              <li className="flex gap-x-3 text-slate-400">
-                <X className="h-6 w-5 flex-none" aria-hidden="true" />
-                Comment History (last 20)
-              </li>
-              <li className="flex gap-x-3 text-slate-400">
-                <X className="h-6 w-5 flex-none" aria-hidden="true" />
-                Golden Hour Feed Scanner
-              </li>
-              <li className="flex gap-x-3 text-slate-400">
-                <X className="h-6 w-5 flex-none" aria-hidden="true" />
-                Custom Persona
-              </li>
             </ul>
           </motion.div>
 
@@ -164,7 +147,7 @@ export function Pricing() {
               href="#"
               className="mt-8 block rounded-full bg-white px-3 py-3 text-center text-sm font-semibold leading-6 text-indigo-600 shadow-sm hover:bg-indigo-50 transition-all"
             >
-              Start 7-Day Free Trial
+              Upgrade to Pro
             </a>
             <ul className="mt-8 space-y-3 text-sm leading-6 text-indigo-100 flex-grow">
               {proFeatures.map((feature) => (

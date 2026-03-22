@@ -14,7 +14,7 @@ const features = [
   },
   {
     name: 'Length Options',
-    description: 'Choose between Brief, Medium, or Long comments to perfectly match the context of the post.',
+    description: 'Choose between Brief, Medium, or Long (Pro) comments to perfectly match the context of the post.',
     icon: AlignLeft,
   },
   {
@@ -44,7 +44,7 @@ const features = [
   },
   {
     name: 'AI Post Generator',
-    description: 'Generate full LinkedIn posts from a topic in seconds. Perfect hook, short paragraphs.',
+    description: 'Generate full LinkedIn posts from LinkedIn\'s native editor. 5 post types, 4 goals, and automatic formatting.',
     icon: PenTool,
   },
   {

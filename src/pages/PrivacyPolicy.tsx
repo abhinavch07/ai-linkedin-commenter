@@ -28,7 +28,7 @@ export function PrivacyPolicy() {
         <h2>What we collect</h2>
         <ul>
           <li><strong>Anonymous device ID</strong> — A randomly generated identifier created on install. It is not linked to your name, email, or any personal information. It is used to track your trial status and usage limits.</li>
-          <li><strong>Email address (optional)</strong> — Only collected if you voluntarily provide it during the Day 5 trial reminder prompt. Used solely to send you a trial expiry reminder and upgrade information.</li>
+          <li><strong>Email address (optional)</strong> — Only collected if you voluntarily provide it during the Day 10 trial reminder prompt. Used solely to send you a trial expiry reminder and upgrade information.</li>
           <li><strong>Daily usage count</strong> — We track how many comments you generate per day to enforce free tier and trial limits. This is stored server-side against your anonymous device ID.</li>
           <li><strong>IP address</strong> — Used temporarily to prevent automated abuse (limiting new trial registrations per IP per month). Not stored long-term or linked to any personal profile.</li>
         </ul>
@@ -43,20 +43,19 @@ export function PrivacyPolicy() {
         </ul>
 
         <h2>How LinkedIn post content is used</h2>
-        <p>When you click the AI Commenter button, the text of the LinkedIn post or comment you are replying to is sent to our AI provider (OpenAI or Anthropic) to generate a reply. This text is transmitted via HTTPS and is used solely for generating your comment. We do not store this content on our servers. OpenAI and Anthropic's own privacy policies govern how they handle API requests.</p>
+        <p>When you click the AI Commenter button, the text of the LinkedIn post or comment you are replying to is sent to our AI provider (OpenAI) to generate a reply. This text is transmitted via HTTPS and is used solely for generating your comment. We do not store this content on our servers. OpenAI's own privacy policies govern how they handle API requests.</p>
 
         <h2>AI providers</h2>
-        <p>Free and trial users: comments are generated using OpenAI's GPT-4o mini model. Pro users: comments are generated using Anthropic's Claude Haiku model. Post content sent to these providers is subject to their respective privacy policies:</p>
+        <p>Comments are generated using OpenAI's industry-leading models. Post content sent to these providers is subject to their privacy policy:</p>
         <ul>
           <li><a href="https://openai.com/privacy" target="_blank" rel="noreferrer">OpenAI Privacy Policy</a></li>
-          <li><a href="https://www.anthropic.com/privacy" target="_blank" rel="noreferrer">Anthropic Privacy Policy</a></li>
         </ul>
 
         <h2>Data storage</h2>
         <p>Your anonymous device ID, trial status, usage counts, and optional email are stored in Upstash Redis — a serverless database hosted on secure cloud infrastructure. Device records are automatically deleted after 90 days of inactivity. Email records are retained for up to 12 months for upgrade communication.</p>
 
         <h2>Payments</h2>
-        <p>Payments are processed by Razorpay (India) and PayPal (international). We do not store or have access to your payment card details. Razorpay and PayPal's privacy policies govern the handling of your payment information. Upon successful payment, we store only your email address and a generated license key in our database.</p>
+        <p>Payments are processed by Razorpay (India) and Dodo Payments (global). We do not store or have access to your payment card details. Razorpay and Dodo Payments' privacy policies govern the handling of your payment information. Upon successful payment, we store only your email address and a generated license key in our database.</p>
 
         <h2>Chrome permissions explained</h2>
         <ul>
@@ -64,6 +63,7 @@ export function PrivacyPolicy() {
           <li><strong>activeTab</strong> — To read the LinkedIn post text you are currently viewing in order to generate a relevant comment.</li>
           <li><strong>scripting</strong> — To inject the AI Commenter button into LinkedIn's comment boxes.</li>
           <li><strong>clipboardWrite</strong> — To copy generated comments to your clipboard as a fallback if direct insertion fails.</li>
+          <li><strong>tabs</strong> — To detect URL changes for SPA navigation on LinkedIn.</li>
         </ul>
         <p>The extension only activates on <strong>linkedin.com</strong> pages. It does not read data from any other website.</p>
 
@@ -72,7 +72,7 @@ export function PrivacyPolicy() {
 
         <h2>Your rights</h2>
         <ul>
-          <li><strong>Delete your data</strong> — Email us at <a href="mailto:privacy@ailinkedincommenter.com">privacy@ailinkedincommenter.com</a> to request deletion of your device record and any associated email.</li>
+          <li><strong>Delete your data</strong> — Email us at <a href="mailto:ailinkedincommenter@gmail.com">ailinkedincommenter@gmail.com</a> to request deletion of your device record and any associated email.</li>
           <li><strong>Opt out of email</strong> — Reply to any email we send you with "unsubscribe" and we will remove your email immediately.</li>
           <li><strong>Data portability</strong> — Contact us to receive a copy of the data stored against your device ID.</li>
         </ul>
@@ -85,12 +85,12 @@ export function PrivacyPolicy() {
 
         <h2>Contact</h2>
         <p>For any privacy-related questions or requests:<br/>
-        Email: <a href="mailto:privacy@ailinkedincommenter.com">privacy@ailinkedincommenter.com</a><br/>
+        Email: <a href="mailto:ailinkedincommenter@gmail.com">ailinkedincommenter@gmail.com</a><br/>
         Website: <a href="https://www.ailinkedincommenter.com">www.ailinkedincommenter.com</a>
         </p>
 
         <hr className="my-8" />
-        <p className="text-sm text-slate-500">This policy was last updated in March 2026 and applies to AI LinkedIn Commenter version 2.0 and above.</p>
+        <p className="text-sm text-slate-500">This policy was last updated in March 2026 and applies to AI LinkedIn Commenter version 5.0 and above.</p>
       </div>
     </div>
   );

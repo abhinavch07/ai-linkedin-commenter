@@ -23,8 +23,8 @@ export function Support() {
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             Have a question or need help? Fill out the form below or email us directly at{' '}
-            <a href="mailto:ailinkedincommenter@gmail.com" className="font-semibold text-indigo-600 hover:text-indigo-500">
-              ailinkedincommenter@gmail.com
+            <a href="mailto:support@ailinkedincommenter.com" className="font-semibold text-indigo-600 hover:text-indigo-500">
+              support@ailinkedincommenter.com
             </a>
           </p>
         </div>
@@ -55,9 +55,9 @@ export function Support() {
                   onChange={(e) => setCategory(e.target.value)}
                   className="block w-full rounded-md border-0 py-3 px-3.5 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-white"
                 >
-                  <option value="general">General Query</option>
+                  <option value="general">Query / Feedback</option>
+                  <option value="payment">Payment / Billing</option>
                   <option value="technical">Technical Issue</option>
-                  <option value="payment">Payment Issue</option>
                   <option value="others">Others</option>
                 </select>
               </div>

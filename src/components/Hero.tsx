@@ -28,7 +28,7 @@ export function Hero() {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-indigo-200 hover:bg-indigo-500 hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto"
             >
               <Chrome size={24} />
-              Add to Chrome — It's Free
+              Add to Chrome — Free Trial
             </a>
             <a
               href="#how-it-works"

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Logo | AI LinkedIn Commenter</title>
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            background: #f8fafc; 
+            margin: 0; 
+            color: #0f172a;
+        }
+        .card { 
+            background: white; 
+            padding: 3rem; 
+            border-radius: 1.5rem; 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); 
+            text-align: center; 
+            max-width: 400px;
+        }
+        svg { 
+            width: 128px; 
+            height: 128px; 
+            margin-bottom: 1.5rem; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1); 
+        }
+        h2 { margin-top: 0; margin-bottom: 0.5rem; }
+        p { color: #64748b; margin-bottom: 2rem; }
+        .buttons { 
+            display: flex; 
+            gap: 1rem; 
+            justify-content: center; 
+            flex-direction: column;
+        }
+        button { 
+            background: #5A4BFF; 
+            color: white; 
+            border: none; 
+            padding: 1rem 1.5rem; 
+            border-radius: 0.75rem; 
+            font-weight: 600; 
+            cursor: pointer; 
+            font-size: 1rem; 
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        button:hover { background: #4f46e5; }
+        button.secondary {
+            background: #f1f5f9;
+            color: #0f172a;
+        }
+        button.secondary:hover { background: #e2e8f0; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div id="svg-container">
+            <!-- This is the 1024x1024 High Def SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 24 24" id="the-logo">
+              <rect width="24" height="24" rx="5.5" fill="#5A4BFF" />
+              <path d="M 6.5 6.5 H 17.5 A 1.5 1.5 0 0 1 19 8 V 15 A 1.5 1.5 0 0 1 17.5 16.5 H 9.5 L 6 19.5 V 16.5 H 6.5 A 1.5 1.5 0 0 1 5 15 V 8 A 1.5 1.5 0 0 1 6.5 6.5 Z" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="8.5" y1="9.5" x2="15.5" y2="9.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="8.5" y1="12" x2="15.5" y2="12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="8.5" y1="14.5" x2="12" y2="14.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <h2>Your High-Def Logo</h2>
+        <p>Download your logo in infinitely scalable SVG format, or a 1024x1024 PNG.</p>
+        <div class="buttons">
+            <button id="download-png">
+                <svg style="width:20px;height:20px;margin:0;box-shadow:none;border-radius:0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download PNG (1024px)
+            </button>
+            <button id="download-svg" class="secondary">
+                <svg style="width:20px;height:20px;margin:0;box-shadow:none;border-radius:0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download SVG (Vector)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const svgElement = document.getElementById('the-logo');
+        const svgString = new XMLSerializer().serializeToString(svgElement);
+        const blob = new Blob([svgString], {type: 'image/svg+xml;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+
+        document.getElementById('download-svg').addEventListener('click', () => {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'ai-linkedin-commenter-logo.svg';
+            a.click();
+        });
+
+        document.getElementById('download-png').addEventListener('click', () => {
+            const img = new Image();
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = 1024;
+                canvas.height = 1024;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+                const pngUrl = canvas.toDataURL('image/png');
+                const a = document.createElement('a');
+                a.href = pngUrl;
+                a.download = 'ai-linkedin-commenter-logo.png';
+                a.click();
+            };
+            img.src = url;
+        });
+    </script>
+</body>
+</html>
