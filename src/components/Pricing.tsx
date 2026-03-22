@@ -26,14 +26,18 @@ export function Pricing() {
   const freeFeatures = [
     '7 days of full Pro access',
     'Inline LinkedIn experience',
-    '4 Smart Tones',
-    'Language Detection'
+    '4 Smart Tones & Length Options',
+    'Language Detection',
+    'Hot Post Badge & Quality Score',
+    'Engagement Streak Tracker'
   ];
 
   const proFeatures = [
+    'Everything in Free, plus:',
     'Unlimited AI comments',
     'AI Post Generator',
     'Comment History (last 20)',
+    'Golden Hour Feed Scanner',
     'Custom Persona',
     'Priority Customer Support'
   ];
@@ -86,7 +90,7 @@ export function Pricing() {
               />
             </button>
             <span className={`text-sm font-medium ${isAnnual ? 'text-slate-900' : 'text-slate-500'}`}>
-              Yearly <span className="ml-1.5 inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">Save 33%</span>
+              Yearly <span className="ml-1.5 inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700">Save {isIndia ? '33%' : '34%'}</span>
             </span>
           </div>
         </div>
@@ -123,6 +127,14 @@ export function Pricing() {
               <li className="flex gap-x-3 text-slate-400">
                 <X className="h-6 w-5 flex-none" aria-hidden="true" />
                 AI Post Generator
+              </li>
+              <li className="flex gap-x-3 text-slate-400">
+                <X className="h-6 w-5 flex-none" aria-hidden="true" />
+                Comment History (last 20)
+              </li>
+              <li className="flex gap-x-3 text-slate-400">
+                <X className="h-6 w-5 flex-none" aria-hidden="true" />
+                Golden Hour Feed Scanner
               </li>
               <li className="flex gap-x-3 text-slate-400">
                 <X className="h-6 w-5 flex-none" aria-hidden="true" />
@@ -163,6 +175,10 @@ export function Pricing() {
               ))}
             </ul>
           </motion.div>
+        </div>
+        
+        <div className="mt-12 text-center text-sm text-slate-500">
+          <p>Secure payments processed by {isIndia ? 'Razorpay' : 'Dodo Payments'}.</p>
         </div>
       </div>
     </section>

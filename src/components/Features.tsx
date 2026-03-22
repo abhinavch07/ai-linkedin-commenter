@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { LayoutTemplate, BrainCircuit, Globe, Flame, BarChart3, TrendingUp, PenTool, History, UserCircle } from 'lucide-react';
+import { LayoutTemplate, BrainCircuit, Globe, Flame, BarChart3, TrendingUp, PenTool, History, UserCircle, AlignLeft, Clock, ShieldCheck } from 'lucide-react';
 
 const features = [
   {
@@ -13,6 +13,11 @@ const features = [
     icon: BrainCircuit,
   },
   {
+    name: 'Length Options',
+    description: 'Choose between Brief, Medium, or Long comments to perfectly match the context of the post.',
+    icon: AlignLeft,
+  },
+  {
     name: 'Language Detection',
     description: 'Automatically replies in the same language as the post. Hindi post? Hindi reply.',
     icon: Globe,
@@ -21,6 +26,11 @@ const features = [
     name: 'Hot Post Badge',
     description: 'Detects posts under 2 hours old and highlights them. The LinkedIn algorithm rewards early commenting.',
     icon: Flame,
+  },
+  {
+    name: 'Golden Hour Scanner (Pro)',
+    description: 'Scans your feed for posts under 60 minutes old with a countdown bar to maximize early engagement.',
+    icon: Clock,
   },
   {
     name: 'Quality Score',
@@ -46,6 +56,11 @@ const features = [
     name: 'Custom Persona (Pro)',
     description: 'Tell the AI who you are once. Every comment reflects your industry, voice, and expertise.',
     icon: UserCircle,
+  },
+  {
+    name: 'Secure & Private',
+    description: 'Triple-layer security with device ID verification. Your data and LinkedIn account stay safe.',
+    icon: ShieldCheck,
   },
 ];
 
