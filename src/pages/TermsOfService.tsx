@@ -48,7 +48,7 @@ export function TermsOfService() {
 
         <h2 className="text-2xl font-semibold mt-12 mb-4">8. Contact Us</h2>
         <p className="mb-6">
-          If you have any questions about these Terms, please contact us at <a href="mailto:support@ailinkedincommenter.com" className="font-medium hover:underline">support@ailinkedincommenter.com</a>.
+          If you have any questions about these Terms, please contact us at <a href="mailto:ailinkedincommenter@gmail.com" className="font-medium hover:underline">ailinkedincommenter@gmail.com</a>.
         </p>
       </div>
     </div>
