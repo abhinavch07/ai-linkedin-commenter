@@ -10,7 +10,7 @@ export function Header() {
             <MessageSquareText size={20} />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900">
-            AI Linkedin Commenter
+            AI LinkedIn Commenter & Post Generator
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">

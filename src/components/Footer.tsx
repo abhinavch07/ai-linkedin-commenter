@@ -12,7 +12,7 @@ export function Footer() {
                 <MessageSquareText size={20} />
               </div>
               <span className="text-xl font-bold tracking-tight text-white">
-                AI Linkedin Commenter
+                AI LinkedIn Commenter & Post Generator
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-xs">
