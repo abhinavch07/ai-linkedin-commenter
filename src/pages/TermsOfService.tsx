@@ -41,14 +41,25 @@ export function TermsOfService() {
           In no event shall AI Linkedin Commenter, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4">7. Changes to Terms</h2>
+        <h2 className="text-2xl font-semibold mt-12 mb-4">7. Payments & Refund Policy</h2>
+        <p className="mb-4">
+          AI LinkedIn Commenter offers a 14-day free trial. After the trial period, you may subscribe to a paid Pro plan. By subscribing, you agree to recurring billing at the rate displayed at the time of purchase.
+        </p>
+        <ul className="list-disc pl-6 mb-6 space-y-2">
+          <li>You may cancel your subscription at any time from within the extension. Your Pro access will continue until the end of the current billing period.</li>
+          <li>If you are unsatisfied with the Service, you may request a full refund within 7 days of your first payment by emailing <a href="mailto:support@ailinkedincommenter.com" className="font-medium hover:underline">support@ailinkedincommenter.com</a>.</li>
+          <li>Refunds are not available after the 7-day window or for renewal payments, except where required by applicable law.</li>
+          <li>We reserve the right to modify pricing with 30 days' notice to existing subscribers.</li>
+        </ul>
+
+        <h2 className="text-2xl font-semibold mt-12 mb-4">8. Changes to Terms</h2>
         <p className="mb-6">
           We reserve the right to modify or replace these Terms at any time. We will provide notice of any significant changes by updating the date at the top of these Terms.
         </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4">8. Contact Us</h2>
+        <h2 className="text-2xl font-semibold mt-12 mb-4">9. Contact Us</h2>
         <p className="mb-6">
-          If you have any questions about these Terms, please contact us at <a href="mailto:ailinkedincommenter@gmail.com" className="font-medium hover:underline">ailinkedincommenter@gmail.com</a>.
+          If you have any questions about these Terms, please contact us at <a href="mailto:support@ailinkedincommenter.com" className="font-medium hover:underline">support@ailinkedincommenter.com</a>.
         </p>
       </div>
     </div>

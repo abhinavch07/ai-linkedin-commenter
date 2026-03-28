@@ -119,7 +119,7 @@ export function PrivacyPolicy() {
 
         <hr className="my-10 border-slate-200" />
         <p className="text-sm text-slate-500 text-center">
-          AI LinkedIn Commenter & Post Generator · Version 5.0+
+          AI LinkedIn Commenter & Post Generator · Version 2.1.0
         </p>
       </div>
     </div>

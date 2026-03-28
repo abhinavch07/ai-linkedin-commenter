@@ -19,9 +19,22 @@ export function Pricing() {
     }
   };
 
+  const paymentLinks = {
+    india: {
+      monthly: 'https://rzp.io/rzp/h2JGEnm',
+      yearly: 'https://rzp.io/rzp/MyvCatLD',
+    },
+    global: {
+      monthly: 'https://checkout.dodopayments.com/buy/pdt_0NaxeN63h8ZvLuVP0SlyY?quantity=1',
+      yearly: 'https://checkout.dodopayments.com/buy/pdt_0NaxeTlyGkQBjPy4Im90F?quantity=1',
+    },
+  };
+
   const currentPricing = isIndia ? pricing.india : pricing.global;
+  const currentLinks = isIndia ? paymentLinks.india : paymentLinks.global;
   const price = isAnnual ? currentPricing.yearly : currentPricing.monthly;
   const period = isAnnual ? '/year' : '/month';
+  const checkoutUrl = isAnnual ? currentLinks.yearly : currentLinks.monthly;
 
   const freeFeatures = [
     'Full access to all Pro features',
@@ -111,7 +124,7 @@ export function Pricing() {
               <span className="text-5xl font-bold tracking-tight text-slate-900">Free</span>
             </div>
             <a
-              href="#"
+              href="#pricing"
               className="mt-8 block rounded-full bg-white px-3 py-3 text-center text-sm font-semibold leading-6 text-indigo-600 shadow-sm ring-1 ring-inset ring-indigo-200 hover:bg-slate-50 transition-all"
             >
               Start Free Trial
@@ -144,7 +157,9 @@ export function Pricing() {
               <span className="text-sm font-semibold leading-6 text-indigo-200">{period}</span>
             </div>
             <a
-              href="#"
+              href={checkoutUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 block rounded-full bg-white px-3 py-3 text-center text-sm font-semibold leading-6 text-indigo-600 shadow-sm hover:bg-indigo-50 transition-all"
             >
               Upgrade to Pro
