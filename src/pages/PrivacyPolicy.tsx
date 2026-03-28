@@ -113,7 +113,7 @@ export function PrivacyPolicy() {
         <h2 className="text-2xl font-bold mt-12 mb-6 text-slate-900">5. Contact Us</h2>
         <p>If you have any questions about how we handle your data, we're here to help.</p>
         <ul className="space-y-4 my-6">
-          <li><strong>Email:</strong> <a href="mailto:ailinkedincommenter@gmail.com">ailinkedincommenter@gmail.com</a></li>
+          <li><strong>Email:</strong> <a href="mailto:support@ailinkedincommenter.com">support@ailinkedincommenter.com</a></li>
           <li><strong>Website:</strong> <a href="https://www.ailinkedincommenter.com">www.ailinkedincommenter.com</a></li>
         </ul>
 
