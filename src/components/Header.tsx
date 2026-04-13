@@ -26,7 +26,9 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <a
-            href="#"
+            href="https://chromewebstore.google.com/detail/ai-linkedin-commenter/cllejjiggpdloaalnimjpbpgapnjoled"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all"
           >
             Add to Chrome

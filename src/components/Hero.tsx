@@ -24,7 +24,9 @@ export function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#"
+              href="https://chromewebstore.google.com/detail/ai-linkedin-commenter/cllejjiggpdloaalnimjpbpgapnjoled"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-indigo-200 hover:bg-indigo-500 hover:shadow-xl hover:-translate-y-0.5 transition-all w-full sm:w-auto"
             >
               <Chrome size={24} />
